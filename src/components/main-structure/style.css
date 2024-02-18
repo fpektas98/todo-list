@@ -1,0 +1,32 @@
+#container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 70px;
+    padding-bottom: 20px;
+    height: auto;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+
+#header{
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#headerPic{
+    width: 40px;
+    margin-right: 5px;
+}
+
+#headerText{
+    font-size: 33.5px;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+

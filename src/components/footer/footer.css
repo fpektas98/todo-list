@@ -1,0 +1,36 @@
+/* footer.css */
+
+#footer-container {
+  display: flex;
+  /* justify-content: center; */
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 0;
+}
+
+#task-text {
+  /* border: 1px solid black; */
+  font-size: 14px;
+  
+}
+
+#footer {
+  display: flex;
+  margin-left: 50px;
+  
+}
+
+#footer button {
+  margin: 0 2px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#footer button.active {
+  color: #1e7bc1; /* Aktif buton rengi */
+  font-weight: bold;
+}

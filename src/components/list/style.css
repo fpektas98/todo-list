@@ -1,0 +1,113 @@
+ul{
+    list-style-type: none;
+    margin:20px;
+    padding: 0;
+}
+
+ul li {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 10px;
+    
+}
+ul li:hover{
+    outline: none;
+    border-color: #1e7bc1;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);   
+}
+/* Stil dosyası (örneğin, Button.css) */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    margin-left: 8px;
+  }
+  
+  .btn:hover {
+    background-color: #1e7bc1;
+    color: #fff;
+  }
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: gray;
+   
+}
+/* style.css */
+/* Genel stil */
+.li-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* Pozisyonu göreceli yap */
+}
+
+.rounded-checkbox {
+    display: none;
+}
+
+/* Checkbox simgesi için stil */
+.checkbox-label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 15px; /* Checkbox simgesi genişliği + margin-right */
+    user-select: none; /* Kullanıcının metni seçmesini engelliyoruz */
+    margin-left: 10px;
+}
+
+.checkbox-label::before {
+    content: '\2713'; /* Unicode karakteri kullanarak bir tik işareti ekledik */
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px; /* Tik işareti boyutunu ayarla */
+    line-height: 20px;
+    color: transparent; /* Başlangıçta görünmez yap */
+}
+
+/* Hover durumunda tik işareti görünür yap */
+.li-container:hover .checkbox-label::before {
+    color: #55a44a; /* Hover durumunda tik işareti rengini değiştirebilirsiniz */
+}
+
+/* Checkbox işaretlendiğinde tik işareti rengini değiştir */
+.rounded-checkbox:checked + .checkbox-label::before {
+    color: #55a44a; /* Checkbox işaretlendiğinde tik işareti rengini değiştirebilirsiniz */
+}
+
+/* Çarpı işareti için stil */
+.delete-icon {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #757575;
+    display: none;
+    position: absolute;
+    right: 10px; /* Sağa doğru 10 piksel kaydır */
+    z-index: 1;
+}
+
+/* Li üzerine hover durumunda çarpı işaretini görünür yap */
+.li-container:hover .delete-icon {
+    display: inline-block;
+
+}
+
+/* Çarpı işareti hover durumunda rengini değiştir */
+.delete-icon:hover {
+    color: #555555; /* Hover durumunda çarpı işareti rengini değiştir */
+}
